@@ -7,7 +7,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # ZSH PLUGINS #
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx brew)
+plugins=(sublime)
 
 # SOURCE FILES
 source $ZSH/oh-my-zsh.sh
