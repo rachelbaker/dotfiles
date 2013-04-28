@@ -1,20 +1,22 @@
 # ZSH BASE CONFIG #
 ZSH=$HOME/.oh-my-zsh
+DOTFILES=$HOME/dotfiles
 autoload colors && colors
 ZSH_THEME="steeef"
 export UPDATE_ZSH_DAYS=3
 COMPLETION_WAITING_DOTS="true"
-
-# ZSH PLUGINS #
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(sublime)
 
 # SOURCE FILES
 source $ZSH/oh-my-zsh.sh
 source ~/.functions
 source ~/.aliases
 source ~/.rvm/scripts/rvm
+source $DOTFILES/z/z.sh
+source $DOTFILES/wp-cli/utils/wp-completion.bash
 
+# ZSH PLUGINS #
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
 
 # SET EDITORS #
 export EDITOR="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -w"
@@ -35,7 +37,7 @@ PATH="/usr/local/Cellar/mysql/5.6.10/bin:$PATH"
 PATH="/usr/local/share/npm/bin:$PATH"
 
 # Ruby
-PATH="/Users/rachelbaker/.rvm/rubies/ruby-1.9.3-p392/bin/ruby:$PATH"
+PATH="~/.rvm/rubies/ruby-1.9.3-p392/bin/ruby:$PATH"
 
 # PHP
 PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
