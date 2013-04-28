@@ -1,0 +1,8 @@
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[user]
+	name = Rachel Baker
+	email = rachel@rachelbaker.me
+[color]
+	ui = true

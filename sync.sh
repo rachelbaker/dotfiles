@@ -6,7 +6,7 @@
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory           # old d
+dir=~/dotfiles                    # dotfiles directory
 
 cd $dir
 git pull
