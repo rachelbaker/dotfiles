@@ -12,7 +12,7 @@ source ~/.functions
 source ~/.aliases
 source ~/.rvm/scripts/rvm
 source $DOTFILES/z/z.sh
-source $DOTFILES/wp-cli/utils/wp-completion.bash
+source $DOTFILES/wp-cli/utils
 
 # ZSH PLUGINS #
 # Example format: plugins=(rails git textmate ruby lighthouse)

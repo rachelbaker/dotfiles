@@ -6,7 +6,7 @@ alias subl="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 alias e="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n ."
 
 # WP CLI alias
-alias wp='~/wp-cli/bin/wp'
+alias wp='$DOTFILES/wp-cli/bin/wp'
 
 # Todo.txt aliases
 alias todo="~/.todo-cli/todo.sh"
