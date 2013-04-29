@@ -1,6 +1,9 @@
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
+# Reload ZSH Configuration
+alias reload!='. ~/.zshrc'
+
 # Sublime alias
 alias subl="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 alias e="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n ."
