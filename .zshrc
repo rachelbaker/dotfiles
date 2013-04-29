@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 autoload colors && colors
 
 COMPLETION_WAITING_DOTS="true"
-ZSH_THEME="steeef"
+ZSH_THEME="ys"
 
 DOTFILES=$HOME/dotfiles
 
@@ -13,12 +13,35 @@ DOTFILES=$HOME/dotfiles
 export PROJECTS=$HOME/Sites
 export UPDATE_ZSH_DAYS=3
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt NO_BG_NICE # don't nice background tasks
+setopt NO_HUP
+setopt NO_LIST_BEEP
+setopt HIST_VERIFY
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY # add timestamps to history
+setopt PROMPT_SUBST
+setopt CORRECT
+setopt COMPLETE_IN_WORD
+setopt IGNORE_EOF
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY SHARE_HISTORY  # increment and share history
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
+
+# don't expand aliases _before_ completion has finished
+setopt complete_aliases
+
+
 ##################################
 # Source Includes
 ##################################
 source $ZSH/oh-my-zsh.sh
-source ~/.functions
 source ~/.aliases
+source ~/.functions
 source $DOTFILES/z/z.sh
 source $DOTFILES/wp-cli/utils
 
@@ -29,6 +52,12 @@ source $DOTFILES/wp-cli/utils
 if $(grc &>/dev/null) && ! $(brew &>/dev/null)
 then
   source `brew --prefix`/etc/grc.bashrc
+fi
+
+# Load Extras File
+if [ -f $HOME/.extras ];
+then
+  source $HOME/.extras
 fi
 
 

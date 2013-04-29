@@ -6,10 +6,10 @@
 ########## Variables
 
 dir=~/dotfiles                    # dotfiles directory           # old d
-backup=~/dotfiles.backup
+backup=~/dotfiles.backup/setup/
 
 #files=".zshrc .aliases .functions .todo-cli"    # list of files/folders to symlink in homedir
-files=".gitignore .gitconfig .hushlogin"
+files=".gitignore .gitconfig .hushlogin .zshrc .aliases .functions .todo-cli"
 ##########
 
 # create dotfiles_old in homedir
@@ -23,11 +23,13 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $backup"
-    cp -R ~/$file $backup/
+    cp -R ~/$file $backup
     echo "Copied $file to $backup"
-    mv ~/$file $dir/
+    rm -R ~/$file
+    echo "Deleted $file"
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done

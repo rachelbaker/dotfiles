@@ -24,8 +24,22 @@ function title() {
   esac
 }
 
-c() {
-    cd $PROJECTS/$1;
+c () {
+  cd $PROJECTS/$1;
+}
+
+dev () {
+  cd $HOME/dev/$1;
+}
+
+# Create a directory and change into it at the same time.
+function md () {
+  [ -n "$1" ]
+  mkdir -p "$1" && cd "$1";
+}
+
+df() {
+  cd $DOTFILES | subl $DOTFILES;
 }
 
 
@@ -41,7 +55,7 @@ ips() {
 }
 
 # take this repo and copy it to somewhere else minus the .git stuff.
-function gitexport(){
+function gitexport (){
     mkdir -p "$1"
     git archive master | tar -x -C "$1"
 }
@@ -50,7 +64,7 @@ function gitexport(){
 # Usage: extract <file>
 # Description: extracts archived files / mounts disk images
 # Note: .dmg/hdiutil is Mac OS X-specific.
-extract() {
+extract () {
     if [ -f $1 ]; then
         case $1 in
             *.tar.bz2)  tar -jxvf $1                        ;;
@@ -75,7 +89,7 @@ extract() {
 
 # animated gifs from any video
 # from alex sexton   gist.github.com/SlexAxton/4989674
-gifify() {
+gifify () {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
       ffmpeg -i $1 -r 10 -vcodec png out-static-%05d.png
