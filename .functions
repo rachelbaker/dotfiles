@@ -32,16 +32,23 @@ dev () {
   cd $HOME/dev/$1;
 }
 
+# Append new localhost configuration to hosts file.
+function newhost () {
+  [ -n "$1" ]
+  sudo bash -c "printf '\n\n127.0.0.1 $1 \n127.0.0.1 www.$1' >> /etc/hosts" | dscacheutil -flushcache
+}
+
+# Append new 0.0.0.0 configuration to hosts file.
+function newzerohost () {
+  [ -n "$1" ]
+  sudo bash -c "printf '\n\n0.0.0.0 $1 \n0.0.0.0 www.$1' >> /etc/hosts" | dscacheutil -flushcache
+}
+
 # Create a directory and change into it at the same time.
 function md () {
   [ -n "$1" ]
   mkdir -p "$1" && cd "$1";
 }
-
-df() {
-  cd $DOTFILES | subl $DOTFILES;
-}
-
 
 exip() {
     # gather external ip address
