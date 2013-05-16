@@ -8,6 +8,9 @@ alias reload!='. ~/.zshrc'
 alias subl="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 alias e="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n ."
 
+# Kill Server
+alias killserver='sudo killall -9 httpd'
+
 # WP CLI alias
 alias wp='$DOTFILES/wp-cli/bin/wp'
 
@@ -42,6 +45,9 @@ alias sgi='sudo gem install'
 alias bi='bundle install'
 alias bu='bundle update'
 
+# SVN Shortcuts
+alias svnrm='svn status | grep "^\!" | sed "s/^\! *//g" | xargs svn rm'
+
 # Set OSX Defaults
 alias set-defaults="exec $DOTFILES/osx/set-defaults.sh"
 
@@ -61,7 +67,6 @@ alias m='mate .'
 alias s='subl .'
 alias o='open'
 alias oo='open .'
-
 
 # Listing Files
 alias lsd='ls -l | grep "^d"'  # List only directories

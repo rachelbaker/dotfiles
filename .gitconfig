@@ -3,6 +3,21 @@
 	excludesfile = ~/.gitignore
 [user]
 	name = Rachel Baker
-	email = rachel@rachelbaker.me
+	email = rbaker@nerdery.com
 [color]
 	ui = true
+[alias]
+ br = branch
+ cm = commit
+ co = checkout
+ df = diff
+ g = grep -I
+ lg = log -p
+ loq = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+ pb = publish-branch
+ pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
+ rv = review
+ sm = show-merges
+ st = status
+[credential]
+	helper = store
