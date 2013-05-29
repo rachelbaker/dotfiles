@@ -21,3 +21,5 @@
  st = status
 [credential]
 	helper = store
+[push]
+	default = simple
