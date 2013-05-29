@@ -1,0 +1,37 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"CoffeeScript",
+		"CTags for PHP",
+		"DashDoc",
+		"Dayle Rees Color Schemes",
+		"DocBlockr",
+		"EasyMotion",
+		"Emmet",
+		"Gist",
+		"Grunt",
+		"Handlebars",
+		"JavaScript Snippets",
+		"jQuery",
+		"jQuery Mobile Snippets",
+		"jQuery Snippets pack",
+		"Origami",
+		"Package Control",
+		"PhpDox",
+		"Search WordPress Codex",
+		"SFTP",
+		"SideBarEnhancements",
+		"Solarized Color Scheme",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SyntaxChecker",
+		"Theme - Cobalt2",
+		"Theme - Soda",
+		"Todo.txt Syntax",
+		"Tomorrow Color Schemes",
+		"TrailingSpaces"
+	]
+}
