@@ -1,0 +1,3 @@
+This uninstalls the Kaleidoscope command-line tools.
+
+After you complete the uninstallation, you will not be able to use Kaleidoscope's integration with git, svn, bazaar and other version control systems as well as with other Mac apps.

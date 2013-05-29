@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Introduction</key>
+	<dict>
+		<key>title</key>
+		<string>Introduction</string>
+		<key>longTitle</key>
+		<string>Welcome to the ksdiff uninstaller</string>
+		<key>nextButtonTitle</key>
+		<string>Continue</string>
+		<key>previousButtonTitle</key>
+		<string>Go Back</string>
+	</dict>
+	<key>Summary</key>
+	<dict>
+		<key>title</key>
+		<string>Uninstallation Type</string>
+		<key>longTitle</key>
+		<string>Standard Uninstallation</string>
+		<key>nextButtonTitle</key>
+		<string>Uninstall</string>
+		<key>previousButtonTitle</key>
+		<string>Go Back</string>
+	</dict>
+	<key>Progress</key>
+	<dict>
+		<key>title</key>
+		<string>Uninstallation</string>
+		<key>longTitle</key>
+		<string>Uninstalling ksdiff</string>
+		<key>nextButtonTitle</key>
+		<string>Continue</string>
+		<key>previousButtonTitle</key>
+		<string>Go Back</string>
+	</dict>
+	<key>Confirmation</key>
+	<dict>
+		<key>title</key>
+		<string>Confirmation</string>
+		<key>longTitle</key>
+		<string>The uninstallation was completed successfully</string>
+		<key>nextButtonTitle</key>
+		<string>Close</string>
+		<key>previousButtonTitle</key>
+		<string>Go Back</string>
+		<key>descriptionFile</key>
+		<string>Confirmation.rtf</string>
+	</dict>
+</dict>
+</plist>
