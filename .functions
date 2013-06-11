@@ -11,9 +11,9 @@ function workserv() {
     python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
-# From http://dotfiles.org/~_why/.zshrc
-# Sets the window title nicely no matter where you are
-function title() {
+# Credit: http://dotfiles.org/~_why/.zshrc
+# Description: Sets the window title nicely no matter where you are
+title() {
   # escape '%' chars in $1, make nonprintables visible
   a=${(V)1//\%/\%\%}
 
@@ -56,6 +56,10 @@ function md () {
   mkdir -p "$1" && cd "$1";
 }
 
+function tree() {
+      find . ! -name ".DS_Store" -print | sed -e 's;[^/]*/;|__;g;s;__|; |;g'
+}
+
 exip() {
     # gather external ip address
     echo -n "Current External IP: "
@@ -71,6 +75,34 @@ ips() {
 function gitexport (){
     mkdir -p "$1"
     git archive master | tar -x -C "$1"
+}
+
+# Credit: https://github.com/LambdaDriver/Solar-Flair
+# Usage: solarALT [light | dark]
+# Description: SolarALT color schemes for NVAlt
+function solarALT () {
+    case $1 in
+      'dark')
+        osascript -e 'tell application "nvALT" to quit'
+        defaults write net.elasticthreads.nv ColorScheme 2
+        defaults write net.elasticthreads.nv BackgroundTextColor "<040b7374 7265616d 74797065 6481e803 84014084 8484074e 53436f6c 6f720084 84084e53 4f626a65 63740085 84016301 84046666 666683e6 73823c83 b38e013e 835a8723 3e0186>"
+        defaults write net.elasticthreads.nv ForegroundTextColor "<040b7374 7265616d 74797065 6481e803 84014084 8484074e 53436f6c 6f720084 84084e53 4f626a65 63740085 84016301 84046666 666683bc 93e13e83 1177023f 83ce5004 3f0186>"
+        defaults write net.elasticthreads.nv SearchTermHighlightColor "<040b7374 7265616d 74797065 6481e803 84014084 8484074e 53436f6c 6f720084 84084e53 4f626a65 63740085 84016301 84046666 666683b2 4d213d83 92f5233e 83be174b 3e0186>"
+        osascript -e 'tell application "nvALT" to launch'
+        ;;
+      'light')
+        osascript -e 'tell application "nvALT" to quit'
+        defaults write net.elasticthreads.nv ColorScheme 2
+        defaults write net.elasticthreads.nv BackgroundTextColor "<040b7374 7265616d 74797065 6481e803 84014084 8484074e 53436f6c 6f720084 84084e53 4f626a65 63740085 84016301 84046666 6666838f 4b7d3f83 d03b753f 8306335d 3f0186>"
+        defaults write net.elasticthreads.nv ForegroundTextColor "<040b7374 7265616d 74797065 6481e803 84014084 8484074e 53436f6c 6f720084 84084e53 4f626a65 63740085 84016301 84046666 666683bc 93e13e83 1177023f 83ce5004 3f0186>"
+        defaults write net.elasticthreads.nv SearchTermHighlightColor "<040b7374 7265616d 74797065 6481e803 84014084 8484074e 53436f6c 6f720084 84084e53 4f626a65 63740085 84016301 84046666 6666833a 866a3f83 dad7633f 83583d4c 3f0186>"
+        osascript -e 'tell application "nvALT" to launch'
+        ;;
+      *)
+        echo "Usage: $(basename $0) [light|dark]"
+        echo "Switches nvALT color schemes between Solarized Light and Dark"
+        ;;
+    esac
 }
 
 # credit: http://nparikh.org/notes/zshrc.txt
