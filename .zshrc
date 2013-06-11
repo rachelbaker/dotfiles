@@ -69,7 +69,7 @@ fi
 # PLUGIN Settings
 ##################################
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git sublime brew npm ruby gem rails bundler rvm zsh-syntax-highlighting)
+plugins=(git brew npm ruby rails bundler rvm zsh-syntax-highlighting history-substring-search)
 
 ##################################
 # EDITOR Definitions
@@ -103,6 +103,9 @@ PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 
 # RVM for scripting
 #PATH=$PATH:$HOME/.rvm/bin
+
+# PostGres.app
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 # CTags
 export PATH="/usr/local/bin:$PATH"
