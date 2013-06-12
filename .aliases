@@ -11,18 +11,26 @@ alias e="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n .
 # Kill Server
 alias killserver='sudo killall -9 httpd'
 
+# Print Apache User and Group
+alias apacheuser="egrep -iw --color=auto '^user|^group' /etc/apache2/httpd.conf"
+
 # WP CLI alias
 alias wp='$DOTFILES/wp-cli/bin/wp'
+
+# WordPress aliases
+alias svncowp='svn co http://core.svn.wordpress.org/trunk/ .'
+alias svncobp='svn co http://buddypress.svn.wordpress.org/trunk/ .'
+
 
 # Todo.txt aliases
 alias todo="~/.todo-cli/todo.sh"
 alias t="todo.sh -d ~/.todo-cli/todo.cfg"
 
-# PHP alias
-# alias php="/Applications/MAMP/bin/php/php5.4.4/bin/php"
+
+# Homebrew PHP alias
 alias php="/usr/local/Cellar/php54/5.4.12/bin/php"
 
-# MySQL alias
+# Homebrew MySQL alias
 alias mysql="/usr/local/Cellar/mysql/5.6.10/bin/mysql"
 
 # Edit Hosts File
