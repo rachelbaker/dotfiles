@@ -1,6 +1,7 @@
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
+    filemode = false
 [user]
 	name = Rachel Baker
 	email = rbaker@nerdery.com
@@ -23,3 +24,5 @@
 	helper = store
 [push]
 	default = simple
+[mergetool]
+    keepBackup = true
