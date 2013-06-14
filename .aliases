@@ -57,7 +57,7 @@ alias bu='bundle update'
 alias svnrm='svn status | grep "^\!" | sed "s/^\! *//g" | xargs svn rm'
 
 # Git Submodules - update all references from git repo root.
-alias git subup="git submodule -q foreach git pull -q origin master"
+alias gsubup="git submodule -q foreach git pull -q origin master"
 
 # Set OSX Defaults
 alias set-defaults="exec $DOTFILES/osx/set-defaults.sh"
