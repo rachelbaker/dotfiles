@@ -7,6 +7,7 @@
 		"BracketHighlighter",
 		"Clay Schubiner Color Schemes",
 		"CoffeeScript",
+		"Comment-Snippets",
 		"CTags for PHP",
 		"Dayle Rees Color Schemes",
 		"DocBlockr",
@@ -23,7 +24,7 @@
 		"Oblivion Color Scheme",
 		"Origami",
 		"Package Control",
-		"Pomodoro",
+		"PlainTasks",
 		"Rails Related Files",
 		"RailsCasts Colour Scheme",
 		"RubyTest",
@@ -41,6 +42,8 @@
 		"Todo.txt Syntax",
 		"TomDoc",
 		"Tomorrow Color Schemes",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"Vintage Surround",
+		"VintageEx"
 	]
 }

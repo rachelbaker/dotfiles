@@ -2,32 +2,32 @@
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Clay Schubiner Color Schemes/Blue Thunder.tmTheme",
+	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"fade_fold_buttons": false,
-	"flatland_square_tabs": true,
 	"font_face": "Inconsolata LGC",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 14,
+	"font_size": 14.0,
 	"gpu_window_buffer": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"margin": 2,
 	"preview_on_click": false,
 	"remember_open_files": true,
-	"theme": "Flatland Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": true,
 	"word_wrap": true,
 	"wrap_width": 100
 }
