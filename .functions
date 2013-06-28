@@ -38,6 +38,12 @@ dev () {
   cd $HOME/dev/$1;
 }
 
+# Create a new symlink to ~/dotfiles
+function symlink () {
+  print "Creating symlink to $1 in home directory.";
+  ln -s ~/dotfiles/$1 ~/$1
+}
+
 # Append new localhost configuration to hosts file.
 function newhost () {
   [ -n "$1" ]
