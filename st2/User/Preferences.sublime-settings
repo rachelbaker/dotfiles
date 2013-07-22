@@ -2,11 +2,11 @@
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"fade_fold_buttons": false,
-	"font_face": "Inconsolata LGC",
+	"font_face": "Menlo",
 	"font_options":
 	[
 		"subpixel_antialias"
@@ -19,8 +19,8 @@
 	"ignored_packages":
 	[
 	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
 	"margin": 2,
 	"preview_on_click": false,
 	"remember_open_files": true,
