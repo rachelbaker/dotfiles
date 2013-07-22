@@ -5,8 +5,8 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias reload!='. ~/.zshrc'
 
 # Sublime aliases
-alias subl="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
-alias e="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n ."
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+alias e="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n ."
 
 # Kill Server
 alias killserver='sudo killall -9 httpd'
