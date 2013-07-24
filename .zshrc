@@ -99,7 +99,7 @@ PATH="~/.rvm/rubies/ruby-1.9.3-p392/bin/ruby:$PATH"
 
 # PHP
 #nPATH="/usr/local/sbin:$PATH"
-PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+PATH="/usr/local/Cellar/php54/5.4.14/bin:$PATH"
 
 # RVM for scripting
 #PATH=$PATH:$HOME/.rvm/bin
