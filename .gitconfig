@@ -1,34 +1,38 @@
 [core]
-	autocrlf = input
-	excludesfile = ~/.gitignore
+    autocrlf = input
+    excludesfile = ~/.gitignore
     filemode = false
+    whitespace = -trailing-space,-space-before-tab,-indent-with-non-tab,-tab-in-indent
 [user]
-	name = Rachel Baker
-	email = rbaker@nerdery.com
+    name = Rachel Baker
+    email = rachel@rachelbaker.me
+[branch]
+    autosetuprebase = always
 [color]
-	ui = true
+    ui = true
 [alias]
- br = branch
- cm = commit
- co = checkout
- df = diff
- g = grep -I
- lg = log -p
- loq = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
- pb = publish-branch
- pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
- rv = review
- sm = show-merges
- st = status
+    br = branch
+    cm = commit
+    co = checkout
+    df = diff
+    g = grep -I
+    lg = log -p
+    loq = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    pb = publish-branch
+    pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
+    rv = review
+    sm = show-merges
+    st = status
+    smu = !git submodule foreach git pull && git commit -a -m \"Updated submodules\"
 [credential]
-	helper = store
+    helper = store
 [push]
-	default = simple
+    default = simple
 [mergetool]
     keepBackup = true
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+    cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
+    prompt = false
 [diff]
-	tool = Kaleidoscope
+    tool = Kaleidoscope
