@@ -8,10 +8,11 @@ alias reload!='. ~/.zshrc'
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 alias e="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n ."
 
+# Vagrant directory
+alias vv="cd $HOME/dev/vagrant-local"
 
 # Open current directory in OSX Finder
 alias finder="open -a finder ."
-
 
 # Kill Server
 alias killserver='sudo killall -9 httpd'
@@ -26,11 +27,9 @@ alias wp='$DOTFILES/wp-cli/bin/wp'
 alias svncowp='svn co http://core.svn.wordpress.org/trunk/ .'
 alias svncobp='svn co http://buddypress.svn.wordpress.org/trunk/ .'
 
-
 # Todo.txt aliases
 alias todo="~/.todo-cli/todo.sh"
 alias t="todo.sh -d ~/.todo-cli/todo.cfg"
-
 
 # Homebrew PHP alias
 alias php="/usr/local/Cellar/php54/5.4.12/bin/php"
@@ -86,12 +85,11 @@ alias oo='open .'
 
 # Listing Files
 alias lsd='ls -l | grep "^d"'  # List only directories
-alias ls='ls -lG'              # Always use color output for `ls`
+alias ls='ls -laG'              # Always use color output for `ls`
 
 # Helpers
 alias grep='grep --color=auto' # Always highlight grep search term
 alias ping='ping -c 5'      # Pings with 5 packets, not unlimited
-
 
 # Mac Helpers
 alias showhidden="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
@@ -103,7 +101,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
