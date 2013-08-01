@@ -10,8 +10,6 @@ export CLICOLOR=1
 
 # Constants
 DOTFILES=$HOME/dotfiles
-PROJECTS=$HOME/Sites
-export PROJECTS
 
 # History
 HISTFILE=~/.zsh_history
@@ -69,13 +67,13 @@ fi
 # PLUGIN Settings
 ##################################
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew npm ruby rails bundler rvm zsh-syntax-highlighting history-substring-search)
+plugins=(git brew npm rails bundler rvm zsh-syntax-highlighting history-substring-search)
 
 ##################################
 # EDITOR Definitions
 ##################################
-export EDITOR="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -w"
-export SVN_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -w"
+export EDITOR=vim
+export SVN_EDITOR=vim
 
 ##################################
 # PATH Settings
@@ -88,33 +86,19 @@ export NODE_PATH
 PATH="/usr/local/sbin:$PATH"
 
 # MySQL
-# PATH="/usr/local/Cellar/mysql/5.6.10/bin:$PATH"
 PATH="/usr/local/mysql/bin:$PATH"
 
 # Node Package Manager
 PATH="/usr/local/share/npm/bin:$PATH"
 
 # Ruby
-PATH="~/.rvm/rubies/ruby-1.9.3-p392/bin/ruby:$PATH"
+export PATH="~/.rvm/rubies/ruby-1.9.3-p392/bin/ruby:$PATH"
 
 # PHP
-#nPATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/Cellar/php54/5.4.14/bin:$PATH"
-
-# RVM for scripting
-#PATH=$PATH:$HOME/.rvm/bin
-
-# PostGres.app
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-
-# CTags
-export PATH="/usr/local/bin:$PATH"
 
 # local svn
 PATH="/opt/subversion/bin:$PATH"
-
-# Git
-# PATH="/usr/local/git/bin"
 
 export PATH
 
